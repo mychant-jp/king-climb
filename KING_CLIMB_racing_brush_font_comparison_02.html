@@ -1,0 +1,26 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KING CLIMB / Racing × Brush Font Trial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Road+Rage&family=Racing+Sans+One&family=Faster+One&family=Bangers&display=swap" rel="stylesheet">
+<style>
+:root{--neon:#dfff2e}*{box-sizing:border-box}body{background:#090e11;color:#fff;font-family:Arial,Helvetica,sans-serif;margin:0;padding:22px 15px 55px}
+main{max-width:900px;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2b3a3e;padding-bottom:15px}.brand{font-style:italic;font-size:24px;font-weight:1000;letter-spacing:-1px}.brand span{color:var(--neon)}small{color:#89999c}h1{font-size:22px;margin:24px 0 8px}p{color:#acb6b8;line-height:1.6;font-size:13px}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0 22px}.toolbar button{border:1px solid #51636b;background:#1b282d;color:#e6eeee;border-radius:8px;padding:11px 16px;font-weight:800}.toolbar button.selected{background:var(--neon);color:#0b1012;border-color:var(--neon)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}@media(max-width:520px){.grid{grid-template-columns:1fr}}
+.card{background:#10191d;border:1px solid #38484e;border-radius:14px;overflow:hidden}.meta{display:flex;justify-content:space-between;gap:10px;align-items:start;padding:15px 16px 2px}.meta strong{font-size:15px}.meta small{font-size:10px;color:#aebec1}.desc{padding:1px 16px 12px;font-size:11px;color:#99a9af}
+.stage{min-height:196px;background:radial-gradient(ellipse at 50% 55%,#30441d 0%,#151c1b 42%,#070d10 76%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-top:1px solid #223139;border-bottom:1px solid #223139}
+.stage:before,.stage:after{content:"";position:absolute;left:-10%;width:120%;height:3px;background:linear-gradient(90deg,transparent,var(--neon),white,var(--neon),transparent);transform:rotate(-6deg);filter:drop-shadow(0 0 6px var(--neon));opacity:.75}.stage:before{top:34%}.stage:after{top:74%;opacity:.45;height:2px}
+.digits{position:relative;z-index:1;white-space:nowrap;text-align:center;color:var(--neon);text-shadow:2px 4px 0 #020404,0 0 28px #9dbf2899;-webkit-text-stroke:1px #111b17;line-height:1;max-width:95%;font-size:clamp(70px,14vw,112px);letter-spacing:-.065em;font-variant-numeric:tabular-nums}
+.road{font-family:"Road Rage",cursive;letter-spacing:-.02em;font-size:clamp(86px,16vw,130px);transform:skewX(-5deg)}
+.racing{font-family:"Racing Sans One",sans-serif;transform:skewX(-9deg)}
+.faster{font-family:"Faster One",sans-serif;font-size:clamp(61px,12.5vw,100px);letter-spacing:-.055em}
+.bangers{font-family:"Bangers",cursive;font-size:clamp(78px,16vw,124px);transform:skewX(-7deg)}
+.footer{padding:12px 16px;color:#8d9da0;font-size:11px}a{color:var(--neon)}.fine{margin-top:22px}
+</style></head><body><main><header class="top"><div class="brand">KING <span>CLIMB</span></div><small>FONT TRIAL 02</small></header><h1>RACING × BRUSH｜4書体比較</h1><p>前回の筆文字候補とは違う4書体です。背景・色・演出は全案共通で、数字の書体だけを変えています。Google Fontsが読み込める環境でご確認ください。</p>
+<div class="toolbar"><button class="selected" data-time="6.321">6.321s</button><button data-time="10.170">10.170s</button><button data-time="18.622">18.622s</button></div>
+<div class="grid">
+<section class="card"><div class="meta"><strong>A｜Road Rage</strong><small>BRUSH / ROUGH</small></div><p class="desc">荒々しい筆跡とグランジ感。今回の本命。</p><div class="stage"><div class="digits road">6.321</div></div><div class="footer">勢い・個性が強い</div></section>
+<section class="card"><div class="meta"><strong>B｜Racing Sans One</strong><small>SPORT / ITALIC</small></div><p class="desc">太く傾いた競技系。スピード重視。</p><div class="stage"><div class="digits racing">6.321</div></div><div class="footer">シャープ・スポーツ感</div></section>
+<section class="card"><div class="meta"><strong>C｜Faster One</strong><small>SPEED / STREAK</small></div><p class="desc">文字の中にスピードラインがあるレーシング系。</p><div class="stage"><div class="digits faster">6.321</div></div><div class="footer">疾走感・クセが強い</div></section>
+<section class="card"><div class="meta"><strong>D｜Bangers</strong><small>COMIC / IMPACT</small></div><p class="desc">筆文字ではなく勢いのあるコミック系。</p><div class="stage"><div class="digits bangers">6.321</div></div><div class="footer">インパクト・ポップ寄り</div></section>
+</div><p class="fine">※ フォントは公開されているGoogle Fontsから読み込み。KING CLIMB本体は変更していません。商用利用は各フォントのOFLライセンス条件に従ってください。</p></main>
+<script>document.querySelectorAll('[data-time]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-time]').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');document.querySelectorAll('.digits').forEach(x=>x.textContent=b.dataset.time)})</script></body></html>
